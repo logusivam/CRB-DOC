@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://cdn.pixabay.com/animation/2022/08/22/15/52/15-52-25-794_512.gif') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero .animate-button {
+    margin-top: 20px;
+    background: #f8f9fa;
+    animation: fadeInUp 2s ease-in-out;
+    transition:  all 0.3s ease-in-out;
+}
+
+.hero .animate-button:hover {
+    transform: scale(1.1);
+    color: #000000;
+    background: #2190ff;
+}
+
+/* Content Box */
+.content-box {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+}
+
+/* Section Headings */
+h2 {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
